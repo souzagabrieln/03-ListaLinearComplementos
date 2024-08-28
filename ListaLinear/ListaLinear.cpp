@@ -123,7 +123,7 @@ void inserirElemento()
 void excluirElemento()
 {
 	if (nElementos == 0) {
-		cout << "Lista vazia";
+		cout << " A lista esta vazia \n";
 	}
 	else {
 		int valor;
@@ -132,7 +132,7 @@ void excluirElemento()
 		int pos = posicaoElemento(valor);
 
 		if (pos != -1) {
-			for (int n = pos; n < nElementos; n++) {
+			for (int n = pos; n < nElementos - 1; n++) {
 				lista[n] = lista[n + 1];
 			}
 			cout << "Elemento excluido com sucesso. \n";
